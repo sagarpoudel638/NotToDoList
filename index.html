@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div
+      class="wrapper"
+      style="
+        height: 100vh;
+        background: rgb(168, 97, 143);
+        background: linear-gradient(
+          180deg,
+          rgba(168, 97, 143, 1) 0%,
+          rgba(112, 130, 222, 1) 100%
+        );
+      "
+    >
+      <div class="container p-5">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center text-light">Not To Do List</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row border border-white p-5">
+          <div class="col-md-7">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Reading"
+              />
+              <label for="floatingInput">Text</label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Reading"
+              />
+              <label for="floatingInput">Hours</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button type="button" class="btn btn-primary">Add New Task</button>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col text-center mb-4 ">
+            <div class="row">
+              <h2>Entry List</h2>
+              <hr>
+            </div>
+            <div class="row">
+                <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Task 1</td>
+                        <td>10 hrs</td>
+                        <td><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            <button type="button" class="btn btn-success"><i class="fa-solid fa-arrow-right"></i></button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+          <div class="col text-center mb-4">
+            <div class="row">
+              <h2>Bad List</h2>
+              <hr>
+            </div>
+            <div class="row">
+                <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Task 1</td>
+                        <td>10 hrs</td>
+                        <td><button type="button" class="btn btn-warning"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button type="button" class="btn btn-success"><i class="fa-solid fa-trash"></i></button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="row">
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+              </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
